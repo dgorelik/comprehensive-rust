@@ -22,7 +22,7 @@ To get started, install some tools we'll need later:
 ```bash
 sudo apt install gdb-multiarch picocom
 rustup update
-rustup target add thumbv7em-none-eabihf
+rustup target add thumbv7em-none-eabihf aarch64-unknown-none
 cargo install cargo-binutils cargo-embed
 echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="0d28", MODE="0664", GROUP="plugdev"' | sudo tee /etc/udev/rules.d/50-microbit.rules
 sudo udevadm control --reload-rules
